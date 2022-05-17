@@ -1,2 +1,3 @@
 # python-won3
-curs python
+
+__curs python__
