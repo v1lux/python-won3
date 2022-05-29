@@ -1,7 +1,3 @@
-# this is a test program
-
-print('Hello GitHub')
-
 def is_even(nr):
     """Functia is_even.
 
@@ -12,7 +8,7 @@ def is_even(nr):
 
     Returns:
     ----------
-    bool :
+    boolean :
         returneaza True daca nr e par si False daca e impar
 
     Example usage:
@@ -25,7 +21,9 @@ def is_even(nr):
 
     return not bool(nr % 2)
 
-a = is_even(22)
-print(type(a))
-print(a)
 
+if __name__ == '__main__':
+    from doctest import testmod
+    testmod()
+    testmod(name='is_even', verbose=True)
+    print(is_even(100))
