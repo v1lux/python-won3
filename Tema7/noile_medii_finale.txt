@@ -1,0 +1,8 @@
+Nume                     Prenume                  Medie finala
+--------------------------------------------------------------
+Bengescu                 Hortensia                    9.16    
+Georgescu                Gelu                         4.00    
+Ionescu                  Geta                         8.34    
+Popescu                  Ion                          6.33    
+Radulescu                Ioana                        7.67    
+Vasilescu                Vasile                       9.00    

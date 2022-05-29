@@ -1,0 +1,8 @@
+Nume                     Prenume                  Medie Note 
+------------------------------------------------------------
+Bengescu                 Hortensia                 9.00  4  
+Georgescu                Gelu                      3.00  2  
+Ionescu                  Geta                      8.25  4  
+Popescu                  Ion                       4.67  3  
+Radulescu                Ioana                     6.80  5  
+Vasilescu                Vasile                    8.50  4  

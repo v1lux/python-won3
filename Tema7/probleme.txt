@@ -1,0 +1,62 @@
+Recomandari:
+- incercati sa grupati codul pe functii. Codul este mult mai frumos organizat daca il grupam în functii.
+- în masura în care se preteaza, puneti la functii type hinting
+- atentie cand cititi date din fisiere text. Datele citite din fisiere text sunt texte, chiar daca arata ca niște numere cateodata. :-)
+Daca vreti sa lucrati cu numere citite de acolo, stiti ce trebuie sa faceti în prealabil cu ele…
+***
+
+1. Scoala cu care colaboram ne-a dat un fisier text de unde sa importam datele elevilor. Practic nu mai avem un dictionar cu elevii
+și notele ca și la temele de la laboratorul precedent ci primim de la scoala un fisier text cu urmatorul continut:
+Popescu Ion;2;5;7
+Ionescu Geta;10;7;9;7
+Georgescu Gelu;4;2
+Radulescu Ioana;5;9;6;4;10
+Vasilescu Vasile;7;8;9;10
+Bengescu Hortensia;10;9;8;9
+Pe fiecare linie din fisier avem numele elevului, urmat de notele lui, separate prin semnul ;
+Creati-va de mână un fisier text cu Pycharm (alegeti "New > File" în loc de "New > Python File") avand numele note.txt și puneti în
+el cele patru linii de mai sus.
+În continuare trebuie sa rezolvam problema 6.1 de la laboratorul anterior, doar ca datele de intrare nu ne mai vin din acel dictionar
+ci trebuie sa citim acest fisier pe care l-am creat (pe care de fapt ni l-a trimis scoala :-) ) și de acolo sa extragem datele elevilor
+(nume și note). Afisarea va fi exact ca la problema 6.1.
+Sugestii: puteti sa cititi fisierul și sa va creati exact structura dictionar ca la problema 6.1 și de acolo practic aveti problema
+rezolvata. Sau nu trebuie neaparat sa mergeti pe aceeasi rezolvare. Am rezolvat 6.1 în felul respectiv fiindca ne-am adaptat la
+modul în care am primit datele de intrare. Acum puteti sa jonglati cu datele de intrare în alt mod daca doriti. Dar cel mai important e
+sa rezolvati problema, indiferent de modalitatea aleasa.
+
+2. Datele de intrare sunt exact ca și la problema anterioara iar afisarea lor trebuie sa fie ca și la problema 6.3, cu o diferenta: nu
+mai afisam pe ecran respectivele linii formatate ci le scriem intr-un fisier text. Practic dupa rularea programului, vom avea un fisier
+text care va contine exact liniile alea pe care le-am afisat la 6.3. Fisierul cu pricina il vom da scolii, sa și-l tipareasca, etc..
+
+3. Datele de intrare sunt tot din fisierul de la problemele anterioare și trebuie acum sa generam un fisier care va contine premiantii
+clasei, adica primele trei persoane cu mediile cele mai mari. Fisierul rezultat ar trebui sa arate cam asa (dar il aranjati voi cat se
+poate de frumos):
+Premiu Elev Media
+--------------------------------------------------------
+1 Nume 1 Prenume1 9.80
+2 Nume 2 Prenume2 9.15
+3 Nume 3 Prenume3 8.92
+4. Pe langa fisierul note.txt mentionat mai sus, mai avem un fisier numit teze.txt care va contine notele de la teză pentru fiecare
+elev și care arata cam asa:
+Popescu Ion;8
+Ionescu Geta;8
+Georgescu Gelu;5
+Radulescu Ioana;7
+Vasilescu Vasile;9
+Bengescu Hortensia;9
+2
+Daca ne amintim de la scoala, media finala cand avem și nota la teza se calculeaza facand media dintre nota la teza și media
+celorlalte note. Cu alte cuvinte cam asa:
+media finala = (teza + media_notelor) / 2
+Va trebui sa citim cele doua fisiere cu note și teze (atentie ca numele elevilor nu sunt neaparat exact în aceeasi ordine în fisiere,
+dar cu siguranta numele sunt aceleasi, doar ca poate în alta ordine), sa calculam mediile finale și sa generam un fisier cu numele
+elevilor ordonati alfabetic și mediile lor. Las la latitudinea voastra sa ii stabiliti aspectul afisarii.
+5. Ministerul Invatamantului experimenteaza un nou mod de calcul al mediilor și anume, în loc sa se calculeze media tuturor
+notelor, se calculeaza doar media celor mai bune 3 note ale elevului și apoi mai departe se face o medie intre media asta și teza.
+Adica daca elevul are 5 note, se vor considera cele mai bune 3 note ale lui iar celelalte 2 se vor ignora. Daca elevul are 3 note sau
+mai putin, atunci se va calcula media pe baza acelor note.
+Avem aceleasi fisiere de intrare: note.txt și teze.txt
+Trebuie sa generam urmatoarele fisiere pe baza formulei de calcul de mai sus (va las pe voi sa stabiliti aspectul fisierelor):
+- fisier 1: elevi și medii finale în ordine alfabetica
+- fisier 2: cei trei premianti
+- fisier 3: corigentii (cei cu medie sub 5)
