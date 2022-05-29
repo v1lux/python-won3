@@ -10,7 +10,7 @@ Nr. files: 53
 
 import os
 
-os.chdir("/Users/vp/python_programs/python-won3/")
+os.chdir("/Users/vp/python_programs/python-won3/Tema11")
 folders_no = 0
 files_no = 0
 for root, folders, files in os.walk(os.getcwd()):
