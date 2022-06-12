@@ -25,7 +25,7 @@ def get_files_by_extension(path, ext):
 
 
 start_dir = "/Users/vp/python_programs/python-won3/Tema11"
-extension = ".py"
+extension = ".txt"
 print(get_files_by_extension(start_dir, extension))
 
 

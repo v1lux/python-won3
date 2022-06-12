@@ -10,18 +10,18 @@ Nr. files: 53
 
 import os
 
-os.chdir("/Users/vp/python_programs/python-won3/Tema11")
+a = "/Users/vp/python_programs/python-won3/Tema11"
 folders_no = 0
 files_no = 0
-for root, folders, files in os.walk(os.getcwd()):
+for root, folders, files in os.walk(a):
     for folder in folders:
         # print(os.path.join(root, folder))
-        folders_no +=1
+        folders_no += 1
     for file in files:
         # print(os.path.join(root, file))
         files_no += 1
 
-print(f"Path: {os.getcwd()}")
+print(f"Path: {a}")
 print(f"Nr. folders: {folders_no}")
 print(f"Nr. files: {files_no}")
 
