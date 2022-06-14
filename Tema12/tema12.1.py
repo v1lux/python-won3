@@ -9,8 +9,8 @@ class Point:
         return f'{distance:.2f}'
 
 
-x = int(input("Introdu valoare coordonatei x: "))
-y = int(input("Introdu valoare coordonatei y: "))
+x = float(input("Introdu valoare coordonatei x: "))
+y = float(input("Introdu valoare coordonatei y: "))
 
 p = Point(x, y)
 print(f'Distanta de la punct la origine este {p.get_distance()}')

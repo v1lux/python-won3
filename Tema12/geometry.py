@@ -6,7 +6,7 @@ class Point:
 
     def get_distance(self):
         distance = (self.x ** 2 + self.y ** 2) ** 0.5
-        return f'{distance:.2f}'
+        return round(distance, 2)
 
 
 class Circle(Point):
@@ -20,21 +20,20 @@ class Circle(Point):
         return area
 
     def get_distance(self):
-        dst = super().get_distance()
-        return f'{float(dst) - self.r:.2f}'
+        return super().get_distance() - self.r
 
 
 def get_coordinates(*args):
     if args:
-        x = int(input(f"Introdu valoare coordonatei x{args[0]}: "))
-        y = int(input(f"Introdu valoare coordonatei y{args[0]}: "))
+        x = float(input(f"Introdu valoare coordonatei x{args[0]}: "))
+        y = float(input(f"Introdu valoare coordonatei y{args[0]}: "))
     else:
-        x = int(input(f"Introdu valoare coordonatei x: "))
-        y = int(input(f"Introdu valoare coordonatei y: "))
+        x = float(input(f"Introdu valoare coordonatei x: "))
+        y = float(input(f"Introdu valoare coordonatei y: "))
     return x, y
 
 
 def get_ray():
-    r = int(input(f"Introdu valoare razei: "))
+    r = float(input(f"Introdu valoare razei: "))
     return r
 
